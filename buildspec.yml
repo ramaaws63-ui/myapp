@@ -1,0 +1,10 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - printf '[{"name":"myapp","imageUri":"493245399873.dkr.ecr.ap-south-1.amazonaws.com/myapp:latest"}]' > imagedefinitions.json
+
+artifacts:
+  files:
+    - imagedefinitions.json
